@@ -36,6 +36,9 @@ jobs:
           # This matches the repo name automatically, no manual edit needed.
           BASE_PATH: /${{ github.event.repository.name }}/
 
+      - name: Disable Jekyll (not needed for static site)
+        run: touch dist/client/.nojekyll
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
