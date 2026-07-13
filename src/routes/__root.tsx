@@ -9,10 +9,10 @@ import {
 } from "@tanstack/react-router";
 import { useEffect, type ReactNode } from "react";
 
-const baseUrl = import.meta.env.BASE_URL;
-
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
+
+const baseUrl = import.meta.env.BASE_URL;
 
 function NotFoundComponent() {
   return (
