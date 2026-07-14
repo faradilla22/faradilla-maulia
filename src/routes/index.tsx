@@ -18,9 +18,10 @@ import {
   Database,
   BarChart3,
   Brain,
+  Medal,
 } from "lucide-react";
 import heroIllustration from "@/assets/hero-illustration.jpg";
-import { PORTFOLIO, CERTIFICATES_LINK, INTERNSHIP_LETTER, type PortfolioItem } from "@/lib/portfolio-data";
+import { PORTFOLIO, CERTIFICATES_LINK, INTERNSHIP_LETTER, type PortfolioItem, CERTIFICATES, type Certificate } from "@/lib/portfolio-data";
 
 export const Route = createFileRoute("/")({
   component: Index,
