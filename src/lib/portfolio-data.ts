@@ -31,7 +31,7 @@ export const PORTFOLIO: PortfolioItem[] = [
       "Surfaced drop-off week that guides re-engagement",
     ],
     stack: ["Python", "Pandas", "Seaborn", "Google Colab"],
-    link: "https://bit.ly/Portofolio_Faradilla-Maulia",
+    link: "https://colab.research.google.com/drive/1mOzOAeZ2XP4JJ7DyHd-_VITJKCwkjZk_?usp=sharing",
     accent: "terracotta",
   },
   {
@@ -69,26 +69,43 @@ export const PORTFOLIO: PortfolioItem[] = [
       "Model comparison on precision / recall / F1",
     ],
     stack: ["Python", "scikit-learn", "XGBoost", "Google Colab"],
-    link: "https://bit.ly/Portofolio_Faradilla-Maulia",
+    link: "https://colab.research.google.com/drive/1MXjpRQ3kXYMeGrj_wzeNln3qPmxuM_S7?usp=drive_link",
     accent: "clay",
   },
   {
     id: "looker-dashboards",
-    title: "Retail & Credit Card Dashboards",
+    title: "Retail Transaction Report Dashboards",
     category: "BI Dashboards",
     tool: "Looker Studio",
     year: "2026",
     summary:
-      "Two interactive Google Looker Studio dashboards for retail transactions and credit risk profiles.",
+      "An interactive Google Looker Studio dashboards for retail transactions.",
     description:
-      "Simplified the analysis of retail transactions and credit card customers' risk profiles by building two interactive dashboards with filters, calculated fields, and drill-down controls.",
+      "Simplified the analysis of retail transactions by building an interactive dashboards with filters, calculated fields, and drill-down controls.",
     highlights: [
       "Retail transactions dashboard with KPI cards",
-      "Credit card risk profiling with segments",
       "Filters, controls & calculated fields",
     ],
     stack: ["Looker Studio", "Data Modeling", "KPI Design"],
-    link: "https://bit.ly/Portofolio_Faradilla-Maulia",
+    link: "https://datastudio.google.com/reporting/0193955f-159d-4741-a555-2258e7f1f181",
+    accent: "terracotta",
+  },
+  {
+    id: "looker-dashboards-2",
+    title: "Credit Card Report Dashboards",
+    category: "BI Dashboards",
+    tool: "Looker Studio",
+    year: "2026",
+    summary:
+      "An interactive Google Looker Studio dashboards for credit risk profiles.",
+    description:
+      "Simplified the analysis of credit card customers' risk profiles by building an interactive dashboards with filters, calculated fields, and drill-down controls.",
+    highlights: [
+      "Credit card risk profiling with segments",
+      "Filters, controls & calculated fields",
+    ],
+    stack: ["Looker Studio", "Data Modeling", "Credit Card Risk"],
+    link: "https://datastudio.google.com/reporting/34940cb5-9726-4c7a-a2b7-54a4cb289930",
     accent: "terracotta",
   },
   {
@@ -107,7 +124,7 @@ export const PORTFOLIO: PortfolioItem[] = [
       "F1-score 91.11% on the final hybrid model",
     ],
     stack: ["Python", "TensorFlow", "Genetic Algorithms"],
-    link: "https://bit.ly/Portofolio_Faradilla-Maulia",
+    link: "https://drive.google.com/drive/folders/1OPIuV51-YCYjbqXmOXT4h589hAs7gz6Q?usp=sharing",
     accent: "ink",
   },
   {
@@ -126,7 +143,7 @@ export const PORTFOLIO: PortfolioItem[] = [
       "Streamlit web app for public access",
     ],
     stack: ["Python", "scikit-learn", "Streamlit"],
-    link: "https://bit.ly/Portofolio_Faradilla-Maulia",
+    link: "https://drive.google.com/drive/folders/1Jkw1qVKIqRx0Nx82gI4sRjttvoQizn-x?usp=sharing",
     accent: "sage",
   },
   {
@@ -145,7 +162,7 @@ export const PORTFOLIO: PortfolioItem[] = [
       "Usability testing with target users",
     ],
     stack: ["Figma", "Design Thinking", "Prototyping"],
-    link: "https://bit.ly/Portofolio_Faradilla-Maulia",
+    link: "https://www.figma.com/proto/KKVDFU745OO5eW9rmU816N/Design-Aplikasi?page-id=288%3A772&node-id=288-773&p=f&viewport=282%2C249%2C0.02&t=CfylWLhWaLzKWt3H-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=288%3A773",
     accent: "clay",
   },
 ];
