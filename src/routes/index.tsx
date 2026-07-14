@@ -32,7 +32,7 @@ const CATEGORIES = ["All", "Data Analysis", "SQL & Databases", "Machine Learning
 const SKILLS = {
   Data: ["Python", "SQL", "Pandas", "scikit-learn", "XGBoost", "Data Cleaning", "Cohort Analysis"],
   BI: ["Microsoft Power BI", "Google Looker Studio", "Excel (Intermediate)", "Dashboard Design"],
-  "AI / ML": ["AI Prompting", "AI Agents", "Generative AI", "n8n Automations", "Genetic Algorithms"],
+  "AI / ML": ["AI Prompting", "AI Agents", "Generative AI", "Genetic Algorithms", "Clustering", "Prediction", "Classification"],
   "Design & Dev": ["Figma", "UI/UX Research", "Design Thinking", "Laravel", "HTML/CSS"],
 };
 
@@ -70,7 +70,7 @@ function Nav() {
           <a href="#contact" className="hover:text-primary transition-colors">Contact</a>
         </nav>
         <a
-          href="mailto:faradillamaulia.official@gmail.com"
+          href="www.linkedin.com/in/faradilla-maulia"
           className="hidden sm:inline-flex items-center gap-1.5 rounded-full bg-primary text-primary-foreground px-4 py-2 text-sm font-medium hover:opacity-90 transition"
         >
           Let's talk <ArrowUpRight className="w-4 h-4" />
@@ -226,7 +226,7 @@ function About() {
           </p>
         </div>
         <div className="md:col-span-2 space-y-3">
-          <InfoRow icon={<GraduationCap className="w-4 h-4" />} label="Education" value="B.Sc Informatics Engineering — Universitas Sriwijaya (2022–2026)" />
+          <InfoRow icon={<GraduationCap className="w-4 h-4" />} label="Education" value="B.Comp.Sc. Informatics Engineering — Universitas Sriwijaya (2022–2026)" />
           <InfoRow icon={<Award className="w-4 h-4" />} label="GPA" value="3.95 / 4.00" />
           <InfoRow icon={<MapPin className="w-4 h-4" />} label="Based in" value="Palembang, South Sumatra" />
           <InfoRow icon={<Sparkles className="w-4 h-4" />} label="Languages" value="Indonesian · English" />
@@ -393,7 +393,7 @@ function Certificates() {
       <SectionHead
         eyebrow="Certificates"
         title="Training & certifications I've completed."
-        kicker="Each card links to the credential. Replace the placeholder links with your own certificate URLs."
+        kicker="Click any badge to view the certificate behind it — course, issuer, and completion date."
       />
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {CERTIFICATES.map((cert, i) => (
