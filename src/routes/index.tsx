@@ -154,16 +154,14 @@ function Hero() {
             transition={{ duration: 4, repeat: Infinity }}
             className="absolute -left-6 top-10 rounded-2xl bg-card border border-border p-3 shadow-lg"
           >
-            <div className="text-xs text-muted-foreground">Model Accuracy</div>
-            <div className="font-display text-2xl text-primary">92.4%</div>
+            <div className="font-display text-2xl text-primary">Passionate</div>
           </motion.div>
           <motion.div
             animate={{ y: [0, 10, 0] }}
             transition={{ duration: 5, repeat: Infinity }}
             className="absolute -right-4 bottom-16 rounded-2xl bg-foreground text-background p-3 shadow-lg"
           >
-            <div className="text-xs opacity-70">F1 Score</div>
-            <div className="font-display text-2xl">0.911</div>
+            <div className="font-display text-2xl">Tech-Savvy</div>
           </motion.div>
         </motion.div>
       </div>
