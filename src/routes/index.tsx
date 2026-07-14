@@ -254,7 +254,7 @@ function Experience() {
       org: "PT Pupuk Sriwidjaja Palembang",
       icon: <Briefcase className="w-4 h-4" />,
       body: "Built a web-based Equipment Criticality Rating (ECR) module in Laravel 11 with role-based access, RAD workflow, and Black Box Testing until 100% test cases were Accepted.",
-      link: "https://drive.google.com/file/d/1YLI4J4NX9x0wintWaOraKWIWlTrKescQ/view?usp=sharing",
+      link: #,
     },
     {
       when: "Oct 2023 – Aug 2024",
@@ -440,9 +440,7 @@ function Contact() {
           </p>
           <div className="mt-10 grid sm:grid-cols-2 gap-3 max-w-2xl">
             <ContactRow href="mailto:faradillamaulia.official@gmail.com" icon={<Mail className="w-4 h-4" />} label="faradillamaulia.official@gmail.com" />
-            <ContactRow href="tel:+6285763614127" icon={<Phone className="w-4 h-4" />} label="+62 857-6361-4127" />
             <ContactRow href="https://linkedin.com/in/faradilla-maulia" icon={<Linkedin className="w-4 h-4" />} label="linkedin.com/in/faradilla-maulia" />
-            <ContactRow href="#" icon={<MapPin className="w-4 h-4" />} label="Palembang, South Sumatra" />
           </div>
         </div>
       </div>
