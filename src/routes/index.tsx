@@ -20,8 +20,8 @@ import {
   Brain,
   Medal,
 } from "lucide-react";
-import heroIllustration from "@/assets/foto_portfolio.jpg";
-import { PORTFOLIO, CERTIFICATES_LINK, INTERNSHIP_LETTER, type PortfolioItem, CERTIFICATES, type Certificate } from "@/lib/portfolio-data";
+import heroIllustration from "@/assets/foto_portfolio2.jpg";
+import { PORTFOLIO, CERTIFICATES_LINK, type PortfolioItem, CERTIFICATES, type Certificate } from "@/lib/portfolio-data";
 
 export const Route = createFileRoute("/")({
   component: Index,
