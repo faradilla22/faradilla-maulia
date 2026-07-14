@@ -123,7 +123,7 @@ export const PORTFOLIO: PortfolioItem[] = [
       "Genetic Algorithm for feature selection",
       "F1-score 91.11% on the final hybrid model",
     ],
-    stack: ["Python", "TensorFlow", "Genetic Algorithms"],
+    stack: ["Python", "Backpropagation", "Genetic Algorithms"],
     link: "https://drive.google.com/drive/folders/1OPIuV51-YCYjbqXmOXT4h589hAs7gz6Q?usp=sharing",
     accent: "ink",
   },
