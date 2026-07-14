@@ -65,6 +65,7 @@ function Nav() {
           <a href="#about" className="hover:text-primary transition-colors">About</a>
           <a href="#experience" className="hover:text-primary transition-colors">Experience</a>
           <a href="#portfolio" className="hover:text-primary transition-colors">Portfolio</a>
+          <a href="#certificates" className="hover:text-primary transition-colors">Certificates</a>
           <a href="#skills" className="hover:text-primary transition-colors">Skills</a>
           <a href="#contact" className="hover:text-primary transition-colors">Contact</a>
         </nav>
