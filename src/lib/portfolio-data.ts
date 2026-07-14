@@ -111,7 +111,7 @@ export const PORTFOLIO: PortfolioItem[] = [
   {
     id: "swimming-thesis",
     title: "Swimming Talent Scouting — Hybrid BP + GA",
-    category: "Thesis · Deep Learning",
+    category: "Thesis · ANN",
     tool: "Google Colab",
     year: "2025 – 2026",
     summary:
