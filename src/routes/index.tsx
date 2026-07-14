@@ -30,7 +30,7 @@ export const Route = createFileRoute("/")({
 const CATEGORIES = ["All", "Data Analysis", "SQL & Databases", "Machine Learning", "BI Dashboards", "UI/UX Design", "Thesis · Deep Learning", "Data Mining"] as const;
 
 const SKILLS = {
-  Data: ["Python", "SQL", "Pandas", "scikit-learn", "XGBoost", "Data Cleaning", "Cohort Analysis"],
+  Data: ["Python", "SQL", "Pandas", "scikit-learn", "Data Cleaning", "Cohort Analysis"],
   BI: ["Microsoft Power BI", "Google Looker Studio", "Excel (Intermediate)", "Dashboard Design"],
   "AI / ML": ["AI Prompting", "AI Agents", "Generative AI", "Genetic Algorithms", "Clustering", "Prediction", "Classification"],
   "Design & Dev": ["Figma", "UI/UX Research", "Design Thinking", "Laravel", "HTML/CSS"],
@@ -70,7 +70,7 @@ function Nav() {
           <a href="#contact" className="hover:text-primary transition-colors">Contact</a>
         </nav>
         <a
-          href="www.linkedin.com/in/faradilla-maulia"
+          href="https://www.linkedin.com/in/faradilla-maulia/"
           className="hidden sm:inline-flex items-center gap-1.5 rounded-full bg-primary text-primary-foreground px-4 py-2 text-sm font-medium hover:opacity-90 transition"
         >
           Let's talk <ArrowUpRight className="w-4 h-4" />
