@@ -112,7 +112,7 @@ export const PORTFOLIO: PortfolioItem[] = [
     id: "swimming-thesis",
     title: "Swimming Talent Scouting — Hybrid BP + GA",
     category: "Thesis · ANN",
-    tool: "Google Colab",
+    tool: "Streamlit",
     year: "2025 – 2026",
     summary:
       "Improved swimming talent classification accuracy 82% → 92% using Backpropagation + Genetic Algorithm feature selection.",
