@@ -27,7 +27,7 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const CATEGORIES = ["All", "Data Analysis", "SQL & Databases", "Machine Learning", "BI Dashboards", "UI/UX Design", "Thesis · Deep Learning", "Data Mining"] as const;
+const CATEGORIES = ["All", "Data Analysis", "SQL & Databases", "Machine Learning", "BI Dashboards", "UI/UX Design", "Thesis · Artificial Neural Network", "Data Mining"] as const;
 
 const SKILLS = {
   Data: ["Python", "SQL", "Pandas", "scikit-learn", "Data Cleaning", "Cohort Analysis"],
