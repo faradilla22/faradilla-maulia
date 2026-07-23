@@ -187,7 +187,7 @@ export const CERTIFICATES: Certificate[] = [
     title: "Artificial Intelligence Laerning Path Course",
     issuer: "MySkill",
     date: "2026",
-    link: "https://media.licdn.com/dms/image/v2/D562DAQHvZfQK5fzoJw/profile-treasury-document-cover-images_1920/B56Z9RDrlbIUBE-/0/1783771348423?e=1784620800&v=beta&t=8i3yMNqIArp00mvJrezEQA48vCDsvgp8ko6XzIXWC-o",
+    link: "https://drive.google.com/file/d/1nDqbN4wIhcVjZGHRMNIAewY2qo6Oaugv/view?usp=sharing",
     tags: ["AI", "AI Agents", "Vibe Coding"],
   },
   {
@@ -195,7 +195,7 @@ export const CERTIFICATES: Certificate[] = [
     title: "Microsoft Excel Intermediate E-Learning Course",
     issuer: "MySkill",
     date: "2026",
-    link: "https://media.licdn.com/dms/image/v2/D562DAQHP40mmIzO2XA/profile-treasury-document-images_800/B56Z8jQHylIgAc-/1/1783002857681?e=1784764800&v=beta&t=wprnhPC2KA2lKwjX4vcxx_k103akYGfy39GFfGNoZfo",
+    link: "https://drive.google.com/file/d/1NiBesF3KGUJ3nYHx-sTVQhSEV4OBaJaT/view?usp=sharing",
     tags: ["Microsoft Excel", "Data Analysis", "Data Visualization"],
   },
   {
@@ -203,7 +203,7 @@ export const CERTIFICATES: Certificate[] = [
     title: "Python for Data Analysis E-Learning Course",
     issuer: "MySkill",
     date: "2026",
-    link: "https://media.licdn.com/dms/image/v2/D562DAQF2Wo-cjcAtSA/profile-treasury-document-images_800/B56Z8efulXGQAc-/1/1782923062767?e=1784764800&v=beta&t=qWnB7ECyeFzYYl1srdgx3s7IDaHhEAqxEF3dWnwlRf8",
+    link: "https://drive.google.com/file/d/1vRTWIik1X4j2CY4BQwrAJvl0lycD6nDJ/view?usp=sharing",
     tags: ["Python", "Statistics", "Market Basket Analysis"],
   },
   {
@@ -211,7 +211,7 @@ export const CERTIFICATES: Certificate[] = [
     title: "SQL for Data Analysis E-Learning Course",
     issuer: "MySkill",
     date: "2026",
-    link: "https://media.licdn.com/dms/image/v2/D562DAQG8urOHhH5QHA/profile-treasury-document-images_800/B56Z8ZkYXBIoAg-/1/1782840396205?e=1784764800&v=beta&t=ITUCIqyFl4FcrFMHXb4AFMfnfMc5qcJQVZQoc6JCdIw",
+    link: "https://drive.google.com/file/d/1B4pqejvvfbyh9xj6-uUVSqwVo-X6DJoY/view?usp=sharing",
     tags: ["SQL", "MySQL", "Workbench"],
   },
   {
@@ -219,7 +219,7 @@ export const CERTIFICATES: Certificate[] = [
     title: "Microsoft Power BI E-Learning Course",
     issuer: "MySkill",
     date: "2026",
-    link: "https://media.licdn.com/dms/image/v2/D562DAQEtiODOueIvGQ/profile-treasury-document-images_800/B56Z8IWJU8G0Ac-/1/1782551452037?e=1784764800&v=beta&t=NRvXvwz7Uoj0aRay8-nOsH0cwXqC8JWp8Qn_30_InfY",
+    link: "https://drive.google.com/file/d/1LRthThmMnQEYdldaKxwWDVjzWypiN-cg/view?usp=sharing",
     tags: ["Power BI", "Business Intelligence (BI)"],
   },
   {
@@ -227,7 +227,7 @@ export const CERTIFICATES: Certificate[] = [
     title: "Google Looker Studio E-Learning Course",
     issuer: "MySkill",
     date: "2026",
-    link: "https://media.licdn.com/dms/image/v2/D562DAQH_5G9pMzqMkA/profile-treasury-document-images_800/B56Z7qxbJ7JAAc-/1/1782055286514?e=1784764800&v=beta&t=Jc5FWykYsi0o_jxLwrtwoawHM0scmjoy-m3lSiogOfo",
+    link: "https://drive.google.com/file/d/1klMUSkvogzVxHYUjaoLKpuRmNt0Xh808/view?usp=sharing",
     tags: ["Google Data Studio", "Data Visualization", "Data Analysis"],
   },
   {
@@ -235,7 +235,7 @@ export const CERTIFICATES: Certificate[] = [
     title: "Data Analysis E-Learning Course",
     issuer: "MySkill",
     date: "2026",
-    link: "https://media.licdn.com/dms/image/v2/D562DAQGQ5qXIo3tY7Q/profile-treasury-document-cover-images_1920/B56Z75r2kXGoBI-/0/1782305484228?e=1784620800&v=beta&t=x_R4HHs9N2lAcGjkt4TYtly7xxIzZQ4w87K00dyBojI",
+    link: "https://drive.google.com/file/d/1q7Ea4a97A-3GS7Aixc58NiOxAL6IX43H/view?usp=sharing",
     tags: ["Python", "Prediction", "Clustering"],
   },
   {
@@ -243,7 +243,7 @@ export const CERTIFICATES: Certificate[] = [
     title: "Basic Data E-Learning Course",
     issuer: "MySkill",
     date: "2026",
-    link: "https://media.licdn.com/dms/image/v2/D562DAQEZG9UOiap77A/profile-treasury-document-images_800/B56Z7l97DjIgAk-/1/1781974676639?e=1784764800&v=beta&t=VI_iFk-tMwrKZdj8fKeWKhcaQVnzFdaX6U2K3b9ZJBA",
+    link: "https://drive.google.com/file/d/1OVX31XDOy9Jx5XuSU8ZnAJpNxRLuiebv/view?usp=sharing",
     tags: ["Data Analysis"],
   },
 ];
