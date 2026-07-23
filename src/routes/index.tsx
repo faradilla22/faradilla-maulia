@@ -228,7 +228,7 @@ function About() {
         <div className="md:col-span-2 space-y-3">
           <InfoRow icon={<GraduationCap className="w-4 h-4" />} label="Education" value="B.Comp.Sc. Informatics Engineering — Universitas Sriwijaya (2022–2026)" />
           <InfoRow icon={<Award className="w-4 h-4" />} label="GPA" value="3.95 / 4.00" />
-          <InfoRow icon={<MapPin className="w-4 h-4" />} label="Based in" value="Palembang, South Sumatra" />
+          <InfoRow icon={<MapPin className="w-4 h-4" />} label="Based in" value="South Sumatra" />
           <InfoRow icon={<Sparkles className="w-4 h-4" />} label="Languages" value="Indonesian · English" />
         </div>
       </div>
@@ -499,7 +499,6 @@ function Contact() {
             Happy to chat about internships, freelance work, or collaborations.
           </p>
           <div className="mt-10 grid sm:grid-cols-2 gap-3 max-w-2xl">
-            <ContactRow href="mailto:faradillamaulia.official@gmail.com" icon={<Mail className="w-4 h-4" />} label="faradillamaulia.official@gmail.com" />
             <ContactRow href="https://linkedin.com/in/faradilla-maulia" icon={<Linkedin className="w-4 h-4" />} label="linkedin.com/in/faradilla-maulia" />
           </div>
         </div>
