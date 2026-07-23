@@ -224,6 +224,12 @@ function About() {
             staff of the Strategic Studies and Advocacy Department at <strong>HMIF Unsri</strong> — where I chaired
             plenary sessions, ran 5 club events, and supervised programming session of 20+ newly students.
           </p>
+          <p>
+            These experiences sharpened my ability to manage data systematically, communicate findings clearly, and
+            support teams behind the scenes to keep operations running smoothly. I'm drawn to roles where I can
+            organize and maintain reporting systems, turn raw data into something decision-makers can rely on, and
+            provide the digital groundwork that keeps larger initiatives moving forward.
+          </p>
         </div>
         <div className="md:col-span-2 space-y-3">
           <InfoRow icon={<GraduationCap className="w-4 h-4" />} label="Education" value="B.Comp.Sc. Informatics Engineering — Universitas Sriwijaya (2022–2026)" />
@@ -495,7 +501,7 @@ function Contact() {
             Let's build something <span className="italic text-primary">useful.</span>
           </h2>
           <p className="mt-6 max-w-xl opacity-80">
-            Open to entry-level roles in Data Analytics, Business Intelligence, Data Science, and UI/UX Design.
+            Open to entry-level roles in Data Management, Digital Business Support, Data Analytics, Business Intelligence, Data Science, and UI/UX Design.
             Happy to chat about internships, freelance work, or collaborations.
           </p>
           <div className="mt-10 grid sm:grid-cols-2 gap-3 max-w-2xl">
