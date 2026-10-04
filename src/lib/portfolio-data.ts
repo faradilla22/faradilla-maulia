@@ -208,7 +208,7 @@ export const CERTIFICATES: Certificate[] = [
   },
   {
     id: "linkedin-generative-ai",
-    title: "Learn How to Apply Data Science with Microsoft Fabric",
+    title: "What is Generative AI?",
     issuer: "Dicoding Indonesia × Microsoft Elevate",
     date: "July 2026",
     link: "https://www.linkedin.com/learning/certificates/939d575dedce1bb9a29d0e7f64d79c035fb81994e2ebc480927a7e22e12bf2cf?trk=share_certificate",
