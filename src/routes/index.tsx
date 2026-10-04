@@ -256,6 +256,14 @@ function InfoRow({ icon, label, value }: { icon: React.ReactNode; label: string;
 function Experience() {
   const items = [
     {
+      when: "Aug 2026 - Sept 2026",
+      role: "Data Entry Assistant - Freelance",
+      org: "PT Sahabat Anabul Indonesia",
+      icon: <Briefcase className="w-4 h-4" />,
+      body: "Recorded Shopee and TikTok Shop sales invoices in Accurate ERP, verifying invoice data and reconciling revenue entries against transaction proof to keep records accurate and on time.",
+      link: "#",
+    },
+    {
       when: "Jul 2024",
       role: "Internship — IT Dept",
       org: "PT Pupuk Sriwidjaja Palembang",
