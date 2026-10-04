@@ -125,7 +125,7 @@ export const PORTFOLIO: PortfolioItem[] = [
     ],
     stack: ["Python", "Backpropagation", "Genetic Algorithms"],
     link: "https://drive.google.com/drive/folders/1OPIuV51-YCYjbqXmOXT4h589hAs7gz6Q?usp=sharing",
-    accent: "ink",
+    accent: "clay",
   },
   {
     id: "heart-failure",
