@@ -32,8 +32,8 @@ const CATEGORIES = ["All", "Data Analysis", "SQL & Databases", "Machine Learning
 const SKILLS = {
   Data: ["Python", "SQL", "Pandas", "scikit-learn", "Data Cleaning", "Cohort Analysis"],
   BI: ["Microsoft Power BI", "Google Looker Studio", "Excel (Intermediate)", "Dashboard Design"],
-  "AI / ML": ["AI Prompting", "AI Agents", "Generative AI", "Genetic Algorithms", "Clustering", "Prediction", "Classification"],
-  "Design & Dev": ["Figma", "UI/UX Research", "Design Thinking", "Laravel", "HTML/CSS"],
+  "AI / ML": ["AI Prompting", "AI Agents Tools", "Generative AI Tools", "Genetic Algorithms", "Clustering", "Prediction", "Classification", "Machine Learning"],
+  "Design & Dev": ["Figma", "UI/UX Design & Research", "Design Thinking", "Laravel", "HTML/CSS"],
 };
 
 function Index() {
@@ -92,7 +92,7 @@ function Hero() {
             className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-3 py-1 text-xs uppercase tracking-widest text-muted-foreground mb-6"
           >
             <Sparkles className="w-3.5 h-3.5 text-primary" />
-            Data · BI · UI/UX
+            Data · BI · UI/UX · Business
           </motion.div>
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
@@ -115,7 +115,8 @@ function Hero() {
             Fresh Informatics Engineering graduate from Universitas Sriwijaya (GPA 3.95/4.00). I build dashboards,
             train ML models, and design interfaces — currently exploring roles as
             <span className="text-foreground"> Data Analyst</span>,
-            <span className="text-foreground"> BI Analyst</span>, and
+            <span className="text-foreground"> BI Analyst</span>, 
+            <span className="text-foreground"> Business Support</span>, and
             <span className="text-foreground"> UI/UX Designer</span>.
           </motion.p>
           <motion.div
@@ -134,8 +135,8 @@ function Hero() {
 
           <div className="mt-10 grid grid-cols-3 gap-6 max-w-md">
             <Stat value="3.95" label="GPA / 4.00" />
-            <Stat value="9+" label="Certifications" />
-            <Stat value="7" label="Portfolio Projects" />
+            <Stat value="10+" label="Certifications" />
+            <Stat value="8" label="Portfolio Projects" />
           </div>
         </div>
 
@@ -179,7 +180,7 @@ function Stat({ value, label }: { value: string; label: string }) {
 }
 
 function Marquee() {
-  const items = ["Python", "SQL", "Power BI", "Looker Studio", "Figma", "Pandas", "Streamlit", "Laravel", "AI Agents", "Excel"];
+  const items = ["Python", "SQL", "Power BI", "Looker Studio", "Figma", "Pandas", "Streamlit", "Laravel", "AI Agents Tools", "Excel"];
   const doubled = [...items, ...items];
   return (
     <div className="border-y border-border bg-card overflow-hidden py-5">
@@ -215,19 +216,27 @@ function About() {
       <div className="grid md:grid-cols-5 gap-8">
         <div className="md:col-span-3 space-y-5 text-lg leading-relaxed">
           <p>
-            I'm a fresh graduate of <strong>Sriwijaya University</strong>, Department of Computer Science, with a
-            focus on data analysis, machine learning, and UI/UX. I love breaking down messy problems and
-            turning them into clear dashboards, models, and stories.
+            I'm an Informatics Engineering graduate from <strong>Universitas Sriwijaya</strong>{" "}
+            (GPA 3.95/4.00), specializing in data analysis, machine learning, and UI/UX. I turn
+            messy data into clear dashboards, predictive models, and actionable insights, from a
+            hybrid model that lifted classification accuracy from 82% to 92% to a cohort analysis
+            of 460K+ transactions that pinpointed where customers drop off.
           </p>
           <p>
-            Outside class, I served on the UI/UX division of <strong>Google Developer Student Clubs</strong> and as a
-            staff of the Strategic Studies and Advocacy Department at <strong>HMIF Unsri</strong> — where I chaired
-            plenary sessions, ran 5 club events, and supervised programming session of 20+ newly students.
+            I bring hands-on IT and business exposure: I developed the role-based access backend
+            for an Equipment Criticality Rating module at{" "}
+            <strong> PT Pupuk Sriwidjaja Palembang </strong> (100% test cases accepted) and
+            reconciled marketplace sales data in Accurate ERP. Beyond the classroom, I served as
+            liaison with external partners, chaired plenary sessions, and mentored 20+ new
+            students in programming at <strong>HMIF Unsri</strong>, and I delivered an end-to-end
+            UI/UX project, from research to usability testing, at{" "}
+            <strong> Google Developer Student Clubs </strong>.
           </p>
           <p>
-            These experiences sharpened my ability to manage data systematically, communicate findings clearly, and
-            support teams behind the scenes to keep operations running smoothly. I'm drawn to roles where I can
-            organize and maintain reporting systems, turn raw data into something decision-makers can rely on, and
+            These experiences sharpened my ability to work with data accurately, communicate findings
+            clearly, and coordinate across teams to keep projects and operations running smoothly. I'm
+            drawn to Data Analyst, BI Analyst, and business support roles where I can build and
+            maintain reliable reporting systems, turn raw data into decisions teams can trust, and
             provide the digital groundwork that keeps larger initiatives moving forward.
           </p>
         </div>
@@ -506,10 +515,10 @@ function Contact() {
         <div className="relative">
           <div className="text-xs uppercase tracking-[0.3em] text-primary mb-4">Get in touch</div>
           <h2 className="font-display text-5xl md:text-7xl leading-[0.95] max-w-3xl">
-            Let's build something <span className="italic text-primary">useful.</span>
+            Let's build something <span className="italic text-primary">meaningful.</span>
           </h2>
           <p className="mt-6 max-w-xl opacity-80">
-            Open to entry-level roles in Data Management, Digital Business Support, Data Analytics, Business Intelligence, Data Science, and UI/UX Design.
+            Open to entry-level roles in Data Management, Business Support, Data Analytics, Data Analyst, Business Intelligence, Data Science, and UI/UX Design.
             Happy to chat about internships, freelance work, or collaborations.
           </p>
           <div className="mt-10 grid sm:grid-cols-2 gap-3 max-w-2xl">
