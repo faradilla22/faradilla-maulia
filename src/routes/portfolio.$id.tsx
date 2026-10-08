@@ -1,5 +1,6 @@
 import { createFileRoute, Link, notFound, useLoaderData, type ErrorComponentProps } from "@tanstack/react-router";
 import { motion } from "motion/react";
+import type { ReactElement } from "react";
 import { ArrowLeft, ArrowUpRight, ExternalLink, CheckCircle2 } from "lucide-react";
 import { PORTFOLIO, type PortfolioItem } from "@/lib/portfolio-data";
 
@@ -34,7 +35,7 @@ export const Route = createFileRoute("/portfolio/$id")({
   ),
 });
 
-function ProjectPage() {
+function ProjectPage(): ReactElement {
   const { item } = useLoaderData({ from: "/portfolio/$id" });
   const others = PORTFOLIO.filter((p) => p.id !== item.id).slice(0, 3);
 
