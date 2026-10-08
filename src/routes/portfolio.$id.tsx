@@ -13,7 +13,7 @@ export const Route = createFileRoute("/portfolio/$id")({
       ],
     };
   },
-  loader: ({ params }): { item: PortfolioItem } => {
+  loader: ({ params }) => {
     const item = PORTFOLIO.find((p) => p.id === params.id);
     if (!item) throw notFound();
     return { item };
@@ -25,7 +25,7 @@ export const Route = createFileRoute("/portfolio/$id")({
       <Link to="/" className="text-primary underline">← Back home</Link>
     </div>
   ),
-  errorComponent: ({ error, reset }) => (
+  errorComponent: ({ error, reset }: ErrorComponentProps) => (
     <div className="min-h-screen flex flex-col items-center justify-center gap-4 px-6 text-center">
       <h1 className="font-display text-3xl">Something went wrong</h1>
       <p className="text-muted-foreground text-sm">{error.message}</p>
