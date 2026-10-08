@@ -1,4 +1,4 @@
-import { createFileRoute, Link, notFound, type ErrorComponentProps } from "@tanstack/react-router";
+import { createFileRoute, Link, notFound, useLoaderData, type ErrorComponentProps } from "@tanstack/react-router";
 import { motion } from "motion/react";
 import { ArrowLeft, ArrowUpRight, ExternalLink, CheckCircle2 } from "lucide-react";
 import { PORTFOLIO, type PortfolioItem } from "@/lib/portfolio-data";
@@ -25,7 +25,7 @@ export const Route = createFileRoute("/portfolio/$id")({
       <Link to="/" className="text-primary underline">← Back home</Link>
     </div>
   ),
-  errorComponent: ({ error, reset }: ErrorComponentProps) => (
+  errorComponent: ({ error, reset }: ErrorComponentProps<Error>) => (
     <div className="min-h-screen flex flex-col items-center justify-center gap-4 px-6 text-center">
       <h1 className="font-display text-3xl">Something went wrong</h1>
       <p className="text-muted-foreground text-sm">{error.message}</p>
@@ -35,7 +35,7 @@ export const Route = createFileRoute("/portfolio/$id")({
 });
 
 function ProjectPage() {
-  const { item } = Route.useLoaderData();
+  const { item } = useLoaderData({ from: Route.id });
   const others = PORTFOLIO.filter((p) => p.id !== item.id).slice(0, 3);
 
   const accents: Record<string, string> = {
