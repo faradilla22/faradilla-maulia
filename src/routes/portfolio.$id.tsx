@@ -1,7 +1,7 @@
 import { createFileRoute, Link, notFound, type ErrorComponentProps } from "@tanstack/react-router";
 import { motion } from "motion/react";
 import { ArrowLeft, ArrowUpRight, ExternalLink, CheckCircle2 } from "lucide-react";
-import { PORTFOLIO, type PortfolioItem } from "@/lib/portfolio-data";
+import { PORTFOLIO } from "@/lib/portfolio-data";
 
 export const Route = createFileRoute("/portfolio/$id")({
   head: ({ params }: { params: { id: string } }) => {
