@@ -1,11 +1,10 @@
-import { createFileRoute, Link, notFound, useLoaderData, type ErrorComponentProps } from "@tanstack/react-router";
+import { createFileRoute, Link, notFound, type ErrorComponentProps } from "@tanstack/react-router";
 import { motion } from "motion/react";
-import type { ReactElement } from "react";
 import { ArrowLeft, ArrowUpRight, ExternalLink, CheckCircle2 } from "lucide-react";
 import { PORTFOLIO, type PortfolioItem } from "@/lib/portfolio-data";
 
 export const Route = createFileRoute("/portfolio/$id")({
-  head: ({ params }) => {
+  head: ({ params }: { params: { id: string } }) => {
     const item = PORTFOLIO.find((p) => p.id === params.id);
     return {
       meta: [
@@ -35,8 +34,8 @@ export const Route = createFileRoute("/portfolio/$id")({
   ),
 });
 
-function ProjectPage(): ReactElement {
-  const { item } = useLoaderData({ from: "/portfolio/$id" });
+function ProjectPage() {
+  const { item } = Route.useLoaderData();
   const others = PORTFOLIO.filter((p) => p.id !== item.id).slice(0, 3);
 
   const accents: Record<string, string> = {
