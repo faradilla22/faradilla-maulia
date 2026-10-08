@@ -25,17 +25,17 @@ export const Route = createFileRoute("/portfolio/$id")({
       <Link to="/" className="text-primary underline">← Back home</Link>
     </div>
   ),
-  errorComponent: ({ error, reset }: ErrorComponentProps<Error>) => (
+  errorComponent: ({ error, reset }: ErrorComponentProps) => (
     <div className="min-h-screen flex flex-col items-center justify-center gap-4 px-6 text-center">
       <h1 className="font-display text-3xl">Something went wrong</h1>
-      <p className="text-muted-foreground text-sm">{error.message}</p>
+      <p className="text-muted-foreground text-sm">{error instanceof Error ? error.message : String(error)}</p>
       <button onClick={reset} className="rounded-full bg-primary text-primary-foreground px-4 py-2 text-sm">Try again</button>
     </div>
   ),
 });
 
 function ProjectPage() {
-  const { item } = useLoaderData({ from: Route.id });
+  const { item } = useLoaderData({ from: "/portfolio/$id" });
   const others = PORTFOLIO.filter((p) => p.id !== item.id).slice(0, 3);
 
   const accents: Record<string, string> = {
