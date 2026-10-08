@@ -1,3 +1,8 @@
+export type PortfolioResult = {
+  intro: string;
+  points: string[];
+};
+
 export type PortfolioItem = {
   id: string;
   title: string;
@@ -10,10 +15,13 @@ export type PortfolioItem = {
   stack: string[];
   link: string;
   accent: "terracotta" | "sage" | "clay" | "ink";
+  result: PortfolioResult;
 };
 
 // NOTE: Replace `link` values with your real Google Colab / Looker Studio /
 // Figma / Drive / Canva URLs. These placeholders point to your portfolio hub.
+// `result` is what shows in the RESULT section on the project page:
+// `intro` = one lead-in sentence, `points` = the bullet list under it.
 export const PORTFOLIO: PortfolioItem[] = [
   {
     id: "user-retention-cohort",
@@ -33,6 +41,14 @@ export const PORTFOLIO: PortfolioItem[] = [
     stack: ["Python", "Pandas", "Seaborn", "Google Colab"],
     link: "https://colab.research.google.com/drive/1mOzOAeZ2XP4JJ7DyHd-_VITJKCwkjZk_?usp=sharing",
     accent: "terracotta",
+    result: {
+      intro: "Delivered retention insights from 12 monthly cohorts (Jan–Dec 2010), including:",
+      points: [
+        "January cohort was the largest (713 customers) with 39% month-2 retention",
+        "Retention dropped below 50% after the first month in most cohorts",
+        "December showed the lowest retention, despite being a peak shopping season",
+      ],
+    },
   },
   {
     id: "sql-techcorp",
@@ -52,6 +68,14 @@ export const PORTFOLIO: PortfolioItem[] = [
     stack: ["SQL", "MySQL Workbench", "ERD"],
     link: "https://canva.link/8anjsopjanqosbd",
     accent: "sage",
+    result: {
+      intro: "Turned 7 SQL queries into 7 business insights from a 6-table TechCorp database, including:",
+      points: [
+        "Revenue contribution mapped by customer and product category using JOINs and aggregation",
+        "Customer behavior patterns (repeat purchase and activity) uncovered with CTEs and subqueries",
+        "Product mix performance summarized to support pricing and inventory decisions",
+      ],
+    },
   },
   {
     id: "credit-card-default",
@@ -71,6 +95,14 @@ export const PORTFOLIO: PortfolioItem[] = [
     stack: ["Python", "scikit-learn", "XGBoost", "Google Colab"],
     link: "https://colab.research.google.com/drive/1MXjpRQ3kXYMeGrj_wzeNln3qPmxuM_S7?usp=drive_link",
     accent: "clay",
+    result: {
+      intro: "Flagged customers likely to miss credit card payments with models above the 60% accuracy and recall target, including:",
+      points: [
+        "3 classifiers built and tuned (Logistic Regression, XGBoost, Random Forest) with GridSearchCV and recall scoring",
+        "5 engineered features from quarterly data driving the risk signal (mean balance, balance change, active months, product holding change, card tenure)",
+        "One recommended model selected for late-payer outreach, meeting the accuracy and recall threshold",
+      ],
+    },
   },
   {
     id: "looker-dashboards",
@@ -90,6 +122,14 @@ export const PORTFOLIO: PortfolioItem[] = [
     stack: ["Looker Studio", "Data Modeling", "KPI Design"],
     link: "https://datastudio.google.com/reporting/0193955f-159d-4741-a555-2258e7f1f181",
     accent: "terracotta",
+    result: {
+      intro: "Delivered an interactive retail dashboard with 5 KPI scorecards and 8 visuals, surfacing:",
+      points: [
+        "Revenue, profit, and discount trends across payment methods and product categories",
+        "Discount impact and category value read straight from the treemap and donut charts",
+        "Customer concentration from the customer summary table for retention focus",
+      ],
+    },
   },
   {
     id: "looker-dashboards-2",
@@ -109,6 +149,14 @@ export const PORTFOLIO: PortfolioItem[] = [
     stack: ["Looker Studio", "Data Modeling", "Credit Card Risk"],
     link: "https://datastudio.google.com/reporting/34940cb5-9726-4c7a-a2b7-54a4cb289930",
     accent: "terracotta",
+    result: {
+      intro: "Delivered a 3-section credit risk dashboard covering 10K+ customers, surfacing:",
+      points: [
+        "Revenue drivers by occupation, education, and state in the revenue profile section",
+        "Delinquency hotspots isolated with the state filter in the risk profile section",
+        "Customer demographic composition usable for segment and risk targeting",
+      ],
+    },
   },
   {
     id: "swimming-thesis",
@@ -128,6 +176,14 @@ export const PORTFOLIO: PortfolioItem[] = [
     stack: ["Python", "Backpropagation", "Genetic Algorithms"],
     link: "https://drive.google.com/drive/folders/1OPIuV51-YCYjbqXmOXT4h589hAs7gz6Q?usp=sharing",
     accent: "clay",
+    result: {
+      intro: "Raised swimming talent classification accuracy from 82% to 92% with a Hybrid BP + GA model, including:",
+      points: [
+        "Genetic Algorithm feature selection (binary chromosome, roulette wheel, elitism) picking the optimal feature subset from 100 athlete records",
+        "Stable performance by averaging the five best runs across 7 OFAT-tuned parameters",
+        "A Streamlit web app covering data upload, preprocessing, training, and evaluation end to end",
+      ],
+    },
   },
   {
     id: "heart-failure",
@@ -147,6 +203,14 @@ export const PORTFOLIO: PortfolioItem[] = [
     stack: ["Python", "scikit-learn", "Streamlit"],
     link: "https://colab.research.google.com/drive/1JHF_MBhRpgzRAxdredVzsJSUDOTQN1d_?usp=sharing",
     accent: "sage",
+    result: {
+      intro: "Predicted heart failure mortality (DEATH_EVENT) at 92.42% accuracy on a 90:10 train-test split, including:",
+      points: [
+        "A cleaned dataset of 1,320 unique records with 6 clinical features, down from 5,000 raw rows",
+        "Feature importance ranking identifying the strongest clinical predictors of mortality",
+        "An interactive Streamlit web app deploying the Decision Tree model for risk prediction",
+      ],
+    },
   },
   {
     id: "duitzup-uiux",
@@ -166,6 +230,14 @@ export const PORTFOLIO: PortfolioItem[] = [
     stack: ["Figma", "Design Thinking", "Prototyping"],
     link: "https://www.figma.com/proto/KKVDFU745OO5eW9rmU816N/Design-Aplikasi?page-id=288%3A772&node-id=288-773&p=f&viewport=282%2C249%2C0.02&t=CfylWLhWaLzKWt3H-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=288%3A773",
     accent: "clay",
+    result: {
+      intro: "Delivered an end-to-end DuitZup prototype scored 83/100 in the GDSC assessment, including:",
+      points: [
+        "A validated problem statement and user persona from a 20-respondent survey",
+        "A Figma design system (typography, color palette, components) carried from low- to high-fidelity screens",
+        "Usability testing with 8 users and user flows mapped in Whimsical",
+      ],
+    },
   },
 ];
 

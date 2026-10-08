@@ -97,12 +97,13 @@ function ProjectPage() {
           </section>
 
           <section>
-            <h2 className="text-xs uppercase tracking-[0.3em] text-primary mb-4">What this shows</h2>
-            <p className="text-muted-foreground leading-relaxed">
-              This project is part of Faradilla's public portfolio. Use the "Open project" button above to view the
-              live artifact ({item.tool}) — whether it's an executable notebook, an interactive dashboard, an
-              editable design file, or the source repository.
-            </p>
+            <h2 className="text-xs uppercase tracking-[0.3em] text-primary mb-4">Result</h2>
+            <p className="text-muted-foreground leading-relaxed">{item.result.intro}</p>
+            <ul className="mt-4 ml-5 space-y-2 list-disc marker:text-primary">
+              {item.result.points.map((r: string) => (
+                <li key={r} className="text-muted-foreground leading-relaxed pl-1">{r}</li>
+              ))}
+            </ul>
           </section>
         </div>
 
