@@ -17,18 +17,18 @@ export type PortfolioItem = {
 export const PORTFOLIO: PortfolioItem[] = [
   {
     id: "user-retention-cohort",
-    title: "User Retention Cohort Analysis",
+    title: "User Retention Cohort Analysis: Online Retail Cohort",
     category: "Data Analysis",
     tool: "Google Colab",
     year: "2026",
     summary:
       "Cohort retention heatmap built with Pandas to reveal how customers stick around over time.",
     description:
-      "Identified customer retention patterns by building a cohort retention analysis using Pandas and visualizing it as a heatmap — turning raw transaction logs into a story about loyalty.",
+      "Case study using a practice online retail dataset (460K+ transactions): cleaned the data and built a monthly cohort analysis in Python to measure how many customers come back after their first purchase.",
     highlights: [
-      "Cleaned & pivoted transactional data into monthly cohorts",
-      "Built retention heatmap with seaborn / matplotlib",
-      "Surfaced drop-off week that guides re-engagement",
+      "Cleaned 460K+ raw transaction records: handled duplicates, missing customer IDs, outliers, and cancelled orders",
+      "Built monthly cohort table with Pandas (cohort month, period number, pivot table)",
+      "Visualized retention rates in a Seaborn heatmap",
     ],
     stack: ["Python", "Pandas", "Seaborn", "Google Colab"],
     link: "https://colab.research.google.com/drive/1mOzOAeZ2XP4JJ7DyHd-_VITJKCwkjZk_?usp=sharing",
@@ -36,18 +36,18 @@ export const PORTFOLIO: PortfolioItem[] = [
   },
   {
     id: "sql-techcorp",
-    title: "SQL Analysis — TechCorp E-Commerce",
+    title: "SQL Analysis: TechCorp E-Commerce Database ",
     category: "SQL & Databases",
     tool: "MySQL",
     year: "2026",
     summary:
       "6-table relational schema with JOINs, CTEs, and subqueries answering real business questions.",
     description:
-      "Generated business insights from an e-commerce database by designing a 6-table relational schema and writing SQL queries — JOINs, CTEs, subqueries — to answer questions on revenue, customer behavior, and product mix.",
+      "Case study using a simulated e-commerce dataset: designed a 6-table relational database and wrote SQL queries (JOINs, CTEs, subqueries) to answer business questions on revenue, customer behavior, and product mix.",
     highlights: [
-      "Designed 6-table normalized schema",
-      "Wrote CTEs & window functions for cohort revenue",
-      "Turned SQL results into decision-ready insight",
+      "Designed 6-table relational database with primary and foreign keys",
+      "Wrote 7 queries with JOINs, CTEs, subqueries, and aggregation",
+      "Turned query results into 7 business insights",
     ],
     stack: ["SQL", "MySQL Workbench", "ERD"],
     link: "https://canva.link/8anjsopjanqosbd",
@@ -55,18 +55,18 @@ export const PORTFOLIO: PortfolioItem[] = [
   },
   {
     id: "credit-card-default",
-    title: "Credit Card Default Prediction",
+    title: "Credit Card Late Payment Prediction Model",
     category: "Machine Learning",
     tool: "Google Colab",
     year: "2026",
     summary:
       "Compared Logistic Regression, XGBoost & Random Forest with GridSearchCV to pick the best classifier.",
     description:
-      "Determined the best default-prediction model by building and comparing three classification algorithms — Logistic Regression, XGBoost, and Random Forest — through GridSearchCV hyperparameter tuning.",
+      "Case study using a practice banking dataset (7.5K customers): built and compared machine learning models to predict customers likely to miss credit card payments, using feature engineering, class-imbalance handling, and hyperparameter tuning.",
     highlights: [
-      "Feature engineering + class imbalance handling",
-      "GridSearchCV hyperparameter tuning across 3 models",
-      "Model comparison on precision / recall / F1",
+      "Defined the problem and target: predict late payers with accuracy and recall above 60%",
+      "Engineered 5 features from quarterly data (mean balance, balance change, active months, product holding change, card tenure)",
+      "Built and tuned 3 models (Logistic Regression, XGBoost, Random Forest) with GridSearchCV and recall scoring",
     ],
     stack: ["Python", "scikit-learn", "XGBoost", "Google Colab"],
     link: "https://colab.research.google.com/drive/1MXjpRQ3kXYMeGrj_wzeNln3qPmxuM_S7?usp=drive_link",
@@ -74,17 +74,18 @@ export const PORTFOLIO: PortfolioItem[] = [
   },
   {
     id: "looker-dashboards",
-    title: "Retail Transaction Report Dashboards",
+    title: "Retail Transaction Dashboard: Looker Studio",
     category: "BI Dashboards",
     tool: "Looker Studio",
     year: "2026",
     summary:
       "An interactive Google Looker Studio dashboards for retail transactions.",
     description:
-      "Simplified the analysis of retail transactions by building an interactive dashboards with filters, calculated fields, and drill-down controls.",
+      "Case study using a practice retail transaction dataset: built an interactive dashboard in Looker Studio to monitor revenue, profit, discount, and customer performance across payment methods and product categories.",
     highlights: [
-      "Retail transactions dashboard with KPI cards",
-      "Filters, controls & calculated fields",
+      "Built interactive dashboard with 5 KPI scorecards and filters (payment method, category, date range)",
+      "Designed 8 visuals: sales trend, donut charts, discount treemap, and product and customer summary tables",
+      "Turned dashboard views into insights on payment behavior, category value, and customer concentration",
     ],
     stack: ["Looker Studio", "Data Modeling", "KPI Design"],
     link: "https://datastudio.google.com/reporting/0193955f-159d-4741-a555-2258e7f1f181",
@@ -92,17 +93,18 @@ export const PORTFOLIO: PortfolioItem[] = [
   },
   {
     id: "looker-dashboards-2",
-    title: "Credit Card Report Dashboards",
+    title: "Credit Card Customer Dashboard: Looker Studio",
     category: "BI Dashboards",
     tool: "Looker Studio",
     year: "2026",
     summary:
       "An interactive Google Looker Studio dashboards for credit risk profiles.",
     description:
-      "Simplified the analysis of credit card customers' risk profiles by building an interactive dashboards with filters, calculated fields, and drill-down controls.",
+      "Case study using a practice credit card dataset (10K+ customers): built a 3-section Looker Studio dashboard to analyze customer demographics, revenue contribution, and delinquency risk by occupation, education, and state.",
     highlights: [
-      "Credit card risk profiling with segments",
-      "Filters, controls & calculated fields",
+      "Built interactive dashboard with 4 KPI scorecards and a state filter",
+      "Designed 13 visuals across 3 sections: customer demographic, revenue profile, and risk profile",
+      "Turned dashboard views into insights on revenue drivers and delinquency hotspots",
     ],
     stack: ["Looker Studio", "Data Modeling", "Credit Card Risk"],
     link: "https://datastudio.google.com/reporting/34940cb5-9726-4c7a-a2b7-54a4cb289930",
@@ -110,18 +112,18 @@ export const PORTFOLIO: PortfolioItem[] = [
   },
   {
     id: "swimming-thesis",
-    title: "Swimming Talent Scouting — Hybrid BP + GA",
+    title: "Swimming Talent Scouting Classification System — Hybrid BP + GA",
     category: "Thesis · ANN",
     tool: "Streamlit",
     year: "2025 – 2026",
     summary:
       "Improved swimming talent classification accuracy 82% → 92% using Backpropagation + Genetic Algorithm feature selection.",
     description:
-      "Improved the accuracy of swimming talent classification from 82% to 92% (F1-score 91.11%) by developing a Hybrid Backpropagation–Genetic Algorithm model where GA serves as the feature-selection method.",
+      "Thesis research on classifying swimming talent (long vs short distance) from 100 athlete records of two swimming clubs: built a Hybrid Backpropagation–Genetic Algorithm model that selects optimal features, and implemented it as a Streamlit web app.",
     highlights: [
-      "Backpropagation neural network baseline",
-      "Genetic Algorithm for feature selection",
-      "F1-score 91.11% on the final hybrid model",
+      "Built Backpropagation neural network from scratch and Genetic Algorithm for feature selection (binary chromosome, roulette wheel selection, elitism)",
+      "Tuned 7 parameters with One Factor at a Time (OFAT), averaging the five best runs for stability",
+      "Developed Streamlit web app for data upload, preprocessing, training, and evaluation",
     ],
     stack: ["Python", "Backpropagation", "Genetic Algorithms"],
     link: "https://drive.google.com/drive/folders/1OPIuV51-YCYjbqXmOXT4h589hAs7gz6Q?usp=sharing",
@@ -129,18 +131,18 @@ export const PORTFOLIO: PortfolioItem[] = [
   },
   {
     id: "heart-failure",
-    title: "Heart Failure Risk — Decision Tree",
+    title: "Heart Failure Mortality Prediction: Decision Tree",
     category: "Data Mining",
     tool: "Streamlit",
     year: "2025",
     summary:
       "92.42% accuracy heart failure risk predictor deployed to an interactive Streamlit web app.",
     description:
-      "Provides access to heart failure risk predictions with 92.42% accuracy by building a Decision Tree model and deploying it to an interactive Streamlit-based web application.",
+      "Data mining group project using a public heart failure clinical dataset: cleaned the data and built a Decision Tree classifier to predict patient mortality (DEATH_EVENT) from 6 clinical features, with feature importance analysis.",
     highlights: [
-      "Decision Tree classifier on clinical dataset",
-      "92.42% test accuracy",
-      "Streamlit web app for public access",
+      "Cleaned dataset from 5,000 to 1,320 unique records and selected 6 clinical features",
+      "Built Decision Tree classifier in scikit-learn with a 90:10 train-test split and visualized the tree",
+      "Evaluated with accuracy, precision, recall, F1-score, confusion matrix, and feature importance",
     ],
     stack: ["Python", "scikit-learn", "Streamlit"],
     link: "https://colab.research.google.com/drive/1JHF_MBhRpgzRAxdredVzsJSUDOTQN1d_?usp=sharing",
@@ -148,18 +150,18 @@ export const PORTFOLIO: PortfolioItem[] = [
   },
   {
     id: "duitzup-uiux",
-    title: "DuitZup — Budgeting App UI/UX",
+    title: "DuitZup: Personal Finance App UI/UX Design",
     category: "UI/UX Design",
     tool: "Figma",
     year: "2024",
     summary:
       "End-to-end Figma design (83/100 GDSC assessment) for a personal finance & budgeting app.",
     description:
-      "Achieved 83/100 on the Sriwijaya University GDSC assessment by designing DuitZup end-to-end — creative process, technical process, UI design, prototyping, and UX testing — in Figma.",
+      "Final project at GDSC Unsri (UI/UX Division, 2023/2024): designed a personal finance app prototype in Figma using the Design Thinking process, from user research and persona to high-fidelity design and usability testing.",
     highlights: [
-      "Design-thinking process from research to test",
-      "High-fidelity UI + prototype in Figma",
-      "Usability testing with target users",
+      "Conducted user research (20-respondent survey) and defined a user persona and problem statement",
+      "Mapped user flows in Whimsical and built a design system (typography, color palette, components) in Figma",
+      "Designed low- to high-fidelity screens and ran usability testing with 8 users",
     ],
     stack: ["Figma", "Design Thinking", "Prototyping"],
     link: "https://www.figma.com/proto/KKVDFU745OO5eW9rmU816N/Design-Aplikasi?page-id=288%3A772&node-id=288-773&p=f&viewport=282%2C249%2C0.02&t=CfylWLhWaLzKWt3H-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=288%3A773",
