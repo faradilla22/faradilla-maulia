@@ -1,10 +1,10 @@
-import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { createFileRoute, Link, notFound, type ErrorComponentProps } from "@tanstack/react-router";
 import { motion } from "motion/react";
 import { ArrowLeft, ArrowUpRight, ExternalLink, CheckCircle2 } from "lucide-react";
-import { PORTFOLIO, type PortfolioItem } from "@/lib/portfolio-data";
+import { PORTFOLIO } from "@/lib/portfolio-data";
 
 export const Route = createFileRoute("/portfolio/$id")({
-  head: ({ params }) => {
+  head: ({ params }: { params: { id: string } }) => {
     const item = PORTFOLIO.find((p) => p.id === params.id);
     return {
       meta: [
@@ -13,7 +13,7 @@ export const Route = createFileRoute("/portfolio/$id")({
       ],
     };
   },
-  loader: ({ params }): { item: PortfolioItem } => {
+  loader: ({ params }) => {
     const item = PORTFOLIO.find((p) => p.id === params.id);
     if (!item) throw notFound();
     return { item };
@@ -25,10 +25,10 @@ export const Route = createFileRoute("/portfolio/$id")({
       <Link to="/" className="text-primary underline">← Back home</Link>
     </div>
   ),
-  errorComponent: ({ error, reset }) => (
+  errorComponent: ({ error, reset }: ErrorComponentProps) => (
     <div className="min-h-screen flex flex-col items-center justify-center gap-4 px-6 text-center">
       <h1 className="font-display text-3xl">Something went wrong</h1>
-      <p className="text-muted-foreground text-sm">{error.message}</p>
+      <p className="text-muted-foreground text-sm">{error instanceof Error ? error.message : String(error)}</p>
       <button onClick={reset} className="rounded-full bg-primary text-primary-foreground px-4 py-2 text-sm">Try again</button>
     </div>
   ),
@@ -97,12 +97,13 @@ function ProjectPage() {
           </section>
 
           <section>
-            <h2 className="text-xs uppercase tracking-[0.3em] text-primary mb-4">What this shows</h2>
-            <p className="text-muted-foreground leading-relaxed">
-              This project is part of Faradilla's public portfolio. Use the "Open project" button above to view the
-              live artifact ({item.tool}) — whether it's an executable notebook, an interactive dashboard, an
-              editable design file, or the source repository.
-            </p>
+            <h2 className="text-xs uppercase tracking-[0.3em] text-primary mb-4">Result</h2>
+            <p className="text-muted-foreground leading-relaxed">{item.result.intro}</p>
+            <ul className="mt-4 ml-5 space-y-2 list-disc marker:text-primary">
+              {item.result.points.map((r: string) => (
+                <li key={r} className="text-muted-foreground leading-relaxed pl-1">{r}</li>
+              ))}
+            </ul>
           </section>
         </div>
 
