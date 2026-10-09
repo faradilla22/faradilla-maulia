@@ -99,9 +99,12 @@ function ProjectPage() {
           <section>
             <h2 className="text-xs uppercase tracking-[0.3em] text-primary mb-4">Result</h2>
             <p className="text-muted-foreground leading-relaxed">{item.result.intro}</p>
-            <ul className="mt-4 ml-5 space-y-2 list-disc marker:text-primary">
+            <ul className="mt-4 space-y-3">
               {item.result.points.map((r: string) => (
-                <li key={r} className="text-muted-foreground leading-relaxed pl-1">{r}</li>
+                <li key={r} className="flex items-start gap-3 text-lg">
+                  <CheckCircle2 className="w-5 h-5 mt-1 text-primary flex-shrink-0" />
+                  <span>{r}</span>
+                </li>
               ))}
             </ul>
           </section>
