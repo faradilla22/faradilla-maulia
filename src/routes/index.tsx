@@ -219,7 +219,7 @@ function About() {
             I'm an Informatics Engineering graduate from <strong>Universitas Sriwijaya</strong>{" "}
             (GPA 3.95/4.00), specializing in data analysis, machine learning, and UI/UX. I turn
             messy data into clear dashboards, predictive models, and actionable insights, from a
-            hybrid model that lifted classification accuracy from 82% to 92% to a cohort analysis
+            hybrid model that lifted classification accuracy from 82% to 92% to a case study of cohort analysis
             of 460K+ transactions that pinpointed where customers drop off.
           </p>
           <p>
