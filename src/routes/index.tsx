@@ -226,7 +226,7 @@ function About() {
             I bring hands-on IT and business exposure: I developed the role-based access backend
             for an Equipment Criticality Rating module at{" "}
             <strong> PT Pupuk Sriwidjaja Palembang </strong> (100% test cases accepted) and
-            reconciled marketplace sales data in Accurate ERP at PT Sahabat Anabul Indonesia. Beyond the classroom, I served as
+            reconciled marketplace sales data in Accurate ERP at <strong> PT Sahabat Anabul Indonesia </strong>. Beyond the classroom, I served as
             liaison with external partners, chaired plenary sessions, and mentored 20+ new
             students in programming at <strong>HMIF Unsri</strong>, and I delivered an end-to-end
             UI/UX project, from research to usability testing, at{" "}
