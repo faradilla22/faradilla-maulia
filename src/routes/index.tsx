@@ -21,6 +21,16 @@ import {
   Medal,
 } from "lucide-react";
 import heroIllustration from "@/assets/foto_portfolio2.jpg";
+import excelLogo from "@/assets/logos/excel.svg";
+import googleSheetsLogo from "@/assets/logos/google-sheets.svg";
+import mysqlLogo from "@/assets/logos/mysql.svg";
+import powerBiLogo from "@/assets/logos/power-bi.svg";
+import tableauLogo from "@/assets/logos/tableau.svg";
+import lookerLogo from "@/assets/logos/looker.svg";
+import pythonLogo from "@/assets/logos/python.svg";
+import colabLogo from "@/assets/logos/colab.svg";
+import figmaLogo from "@/assets/logos/figma.svg";
+import accurateLogo from "@/assets/logos/accurate.svg";
 import { PORTFOLIO, CERTIFICATES_LINK, type PortfolioItem, CERTIFICATES, type Certificate } from "@/lib/portfolio-data";
 
 export const Route = createFileRoute("/")({
@@ -36,6 +46,20 @@ const SKILLS = {
   "Design & Dev": ["Figma", "UI/UX Design & Research", "Design Thinking", "Laravel", "HTML/CSS"],
 };
 
+// Tools section — edit the list here (name + logo file in src/assets/logos/)
+const TOOLS = [
+  { name: "Excel", img: excelLogo },
+  { name: "Google Sheets", img: googleSheetsLogo },
+  { name: "MySQL", img: mysqlLogo },
+  { name: "Power BI", img: powerBiLogo },
+  { name: "Tableau", img: tableauLogo },
+  { name: "Looker Studio", img: lookerLogo },
+  { name: "Python", img: pythonLogo },
+  { name: "Google Colab", img: colabLogo },
+  { name: "Figma", img: figmaLogo },
+  { name: "Accurate", img: accurateLogo },
+];
+
 function Index() {
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -47,6 +71,7 @@ function Index() {
       <Portfolio />
       <Certificates />
       <Skills />
+      <Tools />
       <Contact />
       <Footer />
     </div>
@@ -67,6 +92,7 @@ function Nav() {
           <a href="#portfolio" className="hover:text-primary transition-colors">Portfolio</a>
           <a href="#certificates" className="hover:text-primary transition-colors">Certificates</a>
           <a href="#skills" className="hover:text-primary transition-colors">Skills</a>
+          <a href="#tools" className="hover:text-primary transition-colors">Tools</a>
           <a href="#contact" className="hover:text-primary transition-colors">Contact</a>
         </nav>
         <a
@@ -500,6 +526,29 @@ function Skills() {
                 </li>
               ))}
             </ul>
+          </motion.div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function Tools() {
+  return (
+    <section id="tools" className="mx-auto max-w-6xl px-6 pb-24">
+      <SectionHead eyebrow="Tools" title="Everyday tools behind my work." />
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+        {TOOLS.map((tool, i) => (
+          <motion.div
+            key={tool.name}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: i * 0.05 }}
+            className="rounded-2xl border border-border bg-card p-6 flex flex-col items-center justify-center gap-4"
+          >
+            <img src={tool.img} alt={`${tool.name} logo`} className="h-10 w-auto max-w-[80px] object-contain" loading="lazy" />
+            <div className="text-sm text-muted-foreground">{tool.name}</div>
           </motion.div>
         ))}
       </div>
