@@ -21,6 +21,16 @@ import {
   Medal,
 } from "lucide-react";
 import heroIllustration from "@/assets/foto_portfolio2.jpg";
+import excelLogo from "@/assets/logos/excel.svg";
+import googleSheetsLogo from "@/assets/logos/google-sheets.svg";
+import mysqlLogo from "@/assets/logos/mysql.svg";
+import powerBiLogo from "@/assets/logos/power-bi.svg";
+import tableauLogo from "@/assets/logos/tableau.svg";
+import lookerLogo from "@/assets/logos/looker.svg";
+import pythonLogo from "@/assets/logos/python.svg";
+import colabLogo from "@/assets/logos/colab.svg";
+import figmaLogo from "@/assets/logos/figma.svg";
+import accurateLogo from "@/assets/logos/accurate.svg";
 import { PORTFOLIO, CERTIFICATES_LINK, type PortfolioItem, CERTIFICATES, type Certificate } from "@/lib/portfolio-data";
 
 export const Route = createFileRoute("/")({
@@ -35,6 +45,20 @@ const SKILLS = {
   "AI / ML": ["AI Prompting", "AI Agents Tools", "Generative AI Tools", "Genetic Algorithms", "Clustering", "Prediction", "Classification", "Machine Learning"],
   "Design & Dev": ["Figma", "UI/UX Design & Research", "Design Thinking", "Laravel", "HTML/CSS"],
 };
+
+// Tools section — edit the list here (name + logo file in src/assets/logos/)
+const TOOLS = [
+  { name: "Excel", img: excelLogo },
+  { name: "Google Sheets", img: googleSheetsLogo },
+  { name: "MySQL", img: mysqlLogo },
+  { name: "Power BI", img: powerBiLogo },
+  { name: "Tableau", img: tableauLogo },
+  { name: "Looker Studio", img: lookerLogo },
+  { name: "Python", img: pythonLogo },
+  { name: "Google Colab", img: colabLogo },
+  { name: "Figma", img: figmaLogo },
+  { name: "Accurate", img: accurateLogo },
+];
 
 function Index() {
   return (
