@@ -71,6 +71,7 @@ function Index() {
       <Portfolio />
       <Certificates />
       <Skills />
+      <Tools />
       <Contact />
       <Footer />
     </div>
@@ -91,6 +92,7 @@ function Nav() {
           <a href="#portfolio" className="hover:text-primary transition-colors">Portfolio</a>
           <a href="#certificates" className="hover:text-primary transition-colors">Certificates</a>
           <a href="#skills" className="hover:text-primary transition-colors">Skills</a>
+          <a href="#tools" className="hover:text-primary transition-colors">Tools</a>
           <a href="#contact" className="hover:text-primary transition-colors">Contact</a>
         </nav>
         <a
@@ -524,6 +526,29 @@ function Skills() {
                 </li>
               ))}
             </ul>
+          </motion.div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function Tools() {
+  return (
+    <section id="tools" className="mx-auto max-w-6xl px-6 pb-24">
+      <SectionHead eyebrow="Tools" title="Everyday tools behind my work." />
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+        {TOOLS.map((tool, i) => (
+          <motion.div
+            key={tool.name}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: i * 0.05 }}
+            className="rounded-2xl border border-border bg-card p-6 flex flex-col items-center justify-center gap-4"
+          >
+            <img src={tool.img} alt={`${tool.name} logo`} className="h-10 w-auto max-w-[80px] object-contain" loading="lazy" />
+            <div className="text-sm text-muted-foreground">{tool.name}</div>
           </motion.div>
         ))}
       </div>
