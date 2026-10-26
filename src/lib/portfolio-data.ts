@@ -264,6 +264,14 @@ export type Certificate = {
 // `id` is the slug; `tags` is only used as labels on the card.
 export const CERTIFICATES: Certificate[] = [
   {
+    id: "ef-set-certificate",
+    title: "EF SET English Certificate 64/100 (C1 Advanced)",
+    issuer: "EF SET",
+    date: "Oct 2026",
+    link: "https://cert.efset.org/en/SUUcKV",
+    tags: ["English", "Reading", "Listening", "Writing", "Speaking"],
+  },
+  {
     id: "microsoft-elevate",
     title: "Applying Data Science with Microsoft Fabric and Building a Generative AI Application with Microsoft Azure",
     issuer: "Dicoding Indonesia × Microsoft Elevate",
